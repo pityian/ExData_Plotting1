@@ -38,7 +38,7 @@ lines(DateTime, subdata$Sub_metering_2, col="red")
 lines(DateTime, subdata$Sub_metering_3, col="blue")
 
 #add legend
-legend("topright", legend=c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), lwd=2, col=c("black","red","blue"))
+legend("topright", legend=c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), lwd=2, bty="n", col=c("black","red","blue"))
 
 #make plot 3
 with(subdata,plot(DateTime, Voltage, type="l", xlab="datetime", ylab="Voltage"))
